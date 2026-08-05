@@ -5,7 +5,7 @@ response = requests.get("https://api-colombia.com/api/v1/TypicalDish")
  
 dishes = json.loads(response.content)
 
-menu = dishes[:5]
+menu = dishes[:20]
 
 def dish_fetch(num):
   return menu[num - 1]
